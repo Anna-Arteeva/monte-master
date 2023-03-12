@@ -1,22 +1,38 @@
 /*Custom Anna*/
 .header {
-    margin-bottom: 10vh;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 7vh;
 }
 .contact-icons {
     font-size: 1.1rem;
     margin: 0.2rem;
 }
-.page-body {
-    position: relative;
+
+@media (min-width: 1190px) {
+    .header {
+        margin-bottom: 10vh;
+    }
 }
+
 .photo {
-    width: 150px;
+    width: 120px;
     border-radius: 50%;
-    position: absolute;
-    left: -200px;
-    top: 60px;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 1190px) {
+    .page-body {
+        position: relative;
+    }
+
+    .photo {
+        width: 150px;
+        border-radius: 50%;
+        position: absolute;
+        left: -200px;
+        top: 60px;
+    }
 }
 /*End Custom Anna*/
 
@@ -31,11 +47,11 @@ html {
 html,
 body {
     margin: 0;
-    padding: .5em .7em;
+    padding: 1vh;
 }
 @media only screen {
     body {
-        margin: 2em auto;
+        margin: .5em auto;
         max-width: 900px;
         color: rgb(55, 53, 47);
     }
